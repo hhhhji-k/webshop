@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web shop Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+
+    <style>
+        body{
+            font-family: "Jua", sans-serif;
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            background-color: #91ccf1 ;
+            line-height: 1.5;
+        }
+
+        header{
+            height: 150px;
+            background-image:url(shop.jpg);
+            background-size: 100px;
+            background-position-x: 410px;
+            background-position-y: 30px;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+       
+        nav{
+            margin-top: 30px;
+            border-top: 1px solid #004771;
+            border-bottom: 1px solid #004771;
+        }
+
+        nav ul{
+            text-align: center;
+            padding: 3px;
+            margin: 5px;
+        }
+
+        nav ul li{
+            list-style: none;
+            display:inline;
+            padding: 10px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+        }
+
+        nav li a:hover{
+            background-color: #f7f4cf;
+         }
+
+        #login{
+            float: left;
+            background-color: #aabacc;
+            ;
+            padding: 15px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        section{
+            background-color: rgb(253,253,223);
+            float: left;
+            margin: 20px;
+            margin-right: 30px;
+            /* margin-left: 20px;
+            margin-bottom: 5px; */
+            padding:5px;
+        }
+
+        article {
+            float:left;
+	        width:250px;
+            height: 500px;
+            margin-left:15px;
+            margin-bottom:15px;
+            margin-right:10px;
+            padding:10px;
+            border:1px solid #f1d1d2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: color 5s;
+        }
+        article img{
+            margin-bottom: 40px;
+        }        
+        
+        #right {
+            width: 205px;
+            float: left;
+            margin-top: 20px;
+            background-color: #aabacc;
+            margin-bottom: 2em;
+            padding-left: 0.7em;
+            padding-bottom: 1em;
+        }
+        
+
+        #right li{
+            list-style: none;
+        }
+
+        #right li:hover{
+            background-color: #f7f4cf;
+        }
+
+        #cart{
+            float: left;
+            background-color: #3c98ce;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            /* margin-top: 2em; */
+            border: 1px solid #004771;
+
+        }
+        #cart p{
+            color:white;
+            text-align: center;
+            
+        }
+
+        footer{
+        clear:both;
+        background-color: #6f7985;
+        text-align: center;
+        padding: 15px;
+        }
+
+        footer p{
+            padding: 10px
+        }
+
+        input[type=button]{
+            background-color: rgb(65, 65, 143);
+            border: none;
+            color: white;
+            font-size: 10px;
+            padding: 6px 10px;
+            float:right;
+            margin-top: 20px;
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <div id="title">
+            <br>
+            <h1>Web Shop</h1>
+        </div>
+  
+    <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">MY ACCOUNT</a></li>
+        <li><a href="#">CONTACTS</a></li>
+    </ul>
+    </nav>
+</header>
+
+
+    <aside>
+    <div id="login">
+        아이디<br>
+        <input type="text"><br>
+        비밀번호<br>
+        <input type="text"><br><br>
+        <input type="submit" value="로그인">
+        <input type="submit" value="초기화"><br><br>
+        <a href="register.html">회원가입</a>&nbsp;&nbsp;
+        <a href="#">아이디/비밀번호 분실</a>
+    </div>
+    </aside>
+    
+
+    <section>
+        <article id="first">
+            <img src="desktop.png" width="200px">
+            심플하고 슬림한 본체에<br>
+            코어 i5 3470과<br>
+            지포스 GT630을 장착<br>
+            CPU:인텔 코어i5 3470<br>
+            (아이비브릿지 3세대)사용<br><br>
+            가격: 1,200,000원<br>
+            <input type="button" value="쇼핑카트에 추가하기">
+        </article>
+        <article id="second">
+            <img src="laptop.png" width="230px">
+            Full-HD로 선명한 화면,<br>
+            ISP패널로 시야각도 좋다!<br>
+            CPU:인텔 코어i7 3630QM,<br>
+            CPU:인텔 코어i7 3630QM<br>
+            <br><br>
+            가격: 1,200,000원
+
+            <br>
+            <input type="button" value="쇼핑카트에 추가하기">
+        </article>
+    </section>
+
+
+    <aside>
+        <ul id="right">
+            <h3>&nbsp;카테고리</h3>
+            <li><a ref="#">컴퓨터</a></li>
+            <li><a ref="#">의류</a></li>
+            <li><a ref="#">음악</a></li>
+            <li><a ref="#">영화</a></li>
+            <li><a ref="#">스포츠/레저</a></li>
+            <li><a ref="#">가구/인테리어</a></li>
+            <li><a ref="#">식품</a></li>
+        </ul>
+        
+        <div id="cart">
+            <p><h3>Shopping Cart</h3></p>
+            현재 쇼핑카트에 물품이 없습니다
+            <br>
+            <img src="cart.png" width="50px"><a href="#">쇼핑카트 보기</a>
+        </div>
+    </aside>        
+
+
+    <footer>    
+    Copyright (c) 2024 Web Shop
+    </footer>
+
+
+   
+
+
+
+</body>
+</html>
